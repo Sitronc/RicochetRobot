@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/FondBD.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="397.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/FondHD.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="397.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@Image/Fond1.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="12.0" layoutY="11.0" prefHeight="778.0" prefWidth="773.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="48.400003814697264" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.59998168945313" minWidth="10.0" prefWidth="47.800018310546875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.79999389648438" minWidth="0.0" prefWidth="50.200012207031264" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.80003662109374" minWidth="0.0" prefWidth="51.19996337890626" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.00001220703126" minWidth="0.0" prefWidth="44.000036621093756" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="0.0" prefWidth="52.79997863769529" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.5999755859375" minWidth="10.0" prefWidth="47.80002441406248" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.80001220703122" minWidth="10.0" prefWidth="47.00004882812499" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.79996337890623" minWidth="10.0" prefWidth="49.60001220703123" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.39999999999998" minWidth="2.199999999999932" prefWidth="44.59998779296876" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="47.000012207031205" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.20001220703125" minWidth="0.0" prefWidth="47.79998779296875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.99996337890627" minWidth="10.0" prefWidth="50.20001220703125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.5999633789063" minWidth="0.0" prefWidth="47.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.00004882812505" minWidth="0.0" prefWidth="47.80002441406248" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="59.799975585937545" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="47.4" minHeight="10.0" prefHeight="47.4" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="71.40000762939454" minHeight="10.0" prefHeight="52.199999999999996" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="85.79998626708984" minHeight="10.0" prefHeight="50.59999542236328" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.99999084472657" minHeight="10.0" prefHeight="44.800012207031244" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="117.20000305175782" minHeight="10.0" prefHeight="46.399987792968744" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="130.0000061035156" minHeight="10.0" prefHeight="52.80001220703127" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="146.79999389648438" minHeight="10.0" prefHeight="43.20000610351565" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="159.2000244140625" minHeight="10.0" prefHeight="47.9999938964844" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="154.2" minHeight="10.0" prefHeight="45.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="151.00001220703126" minHeight="10.0" prefHeight="47.20004882812498" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.60004272460935" minHeight="10.0" prefHeight="45.60000000000002" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="97.80002441406248" minHeight="10.0" prefHeight="56.799999999999955" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="98.19998779296873" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="87.99997558593748" minHeight="10.0" prefHeight="43.19997558593752" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="58.39999999999998" minHeight="10.0" prefHeight="47.99997558593748" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.00002441406252" minHeight="10.0" prefHeight="60.00002441406252" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/FondHG.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
