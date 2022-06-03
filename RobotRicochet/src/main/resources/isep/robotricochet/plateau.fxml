@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isep.robotricochet.GameController">
+   <children>
+      <GridPane fx:id="boardPane" gridLinesVisible="true" layoutX="14.0" layoutY="14.0" prefHeight="700.0" prefWidth="700.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="goalCenterImage" fitHeight="78.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8">
+               <image>
+                  <Image url="@boards/GoalBox.png" />
+               </image></ImageView>
+         </children>
+      </GridPane>
+      <Label fx:id="indication" layoutX="957.0" layoutY="71.0" prefHeight="30.0" prefWidth="213.0" text="Jeton objectif à atteindre :" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="currentImageGoal" fitHeight="89.0" fitWidth="92.0" layoutX="1012.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titlePlayerOne" layoutX="957.0" layoutY="315.0" prefHeight="30.0" prefWidth="175.0" text="JOUEUR 1 :" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="titlePlayerTwo" layoutX="957.0" layoutY="380.0" prefHeight="30.0" prefWidth="175.0" text="JOUEUR 2 :" textAlignment="CENTER" textFill="#4800ff">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="gameBtn" layoutX="944.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleGameBtn" prefHeight="46.0" prefWidth="225.0" text="Lancer le sablier" />
+      <Label fx:id="timerText" layoutX="868.0" layoutY="187.0" prefHeight="63.0" prefWidth="75.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="scorePlayerOne" layoutX="1054.0" layoutY="315.0" prefHeight="30.0" prefWidth="100.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="scorePlayerTwo" layoutX="1054.0" layoutY="380.0" prefHeight="30.0" prefWidth="100.0" textAlignment="CENTER" textFill="#4800ff">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinnerPlayerOne" layoutX="868.0" layoutY="317.0" prefHeight="26.0" prefWidth="75.0" />
+      <Spinner fx:id="spinnerPlayerTwo" layoutX="868.0" layoutY="382.0" prefHeight="26.0" prefWidth="75.0" />
+      <Label fx:id="hitsNumberChoicePlayerOne" layoutX="768.0" layoutY="317.0" prefHeight="26.0" prefWidth="175.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="hitsNumberChoicePlayerTwo" layoutX="767.0" layoutY="382.0" prefHeight="26.0" prefWidth="175.0" textFill="#4800ff">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioPlayerOne" layoutX="793.0" layoutY="321.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="10.0" />
+      <RadioButton fx:id="radioPlayerTwo" layoutX="793.0" layoutY="386.0" mnemonicParsing="false" />
+      <Text fx:id="indicationNumberOfHits" layoutX="735.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qui a eu en premier le nombre de coups ?" textAlignment="CENTER" wrappingWidth="132.7999877929687">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="dotPlayerOne" layoutX="933.0" layoutY="293.0" prefHeight="43.0" prefWidth="22.0" text="•" textFill="RED">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="dotPlayerTwo" layoutX="933.0" layoutY="358.0" prefHeight="43.0" prefWidth="22.0" text="•" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Text fx:id="stateRound" layoutX="735.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Label" textAlignment="CENTER" wrappingWidth="132.7999877929687">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="namePlayerOne" layoutX="735.0" layoutY="86.0" prefHeight="30.0" prefWidth="88.0" text="JOUEUR 1 :" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="namePlayerTwo" layoutX="735.0" layoutY="133.0" prefHeight="30.0" prefWidth="88.0" text="JOUEUR 2 :" textAlignment="CENTER" textFill="#4800ff">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="roundsWonPlayerOne" layoutX="823.0" layoutY="86.0" prefHeight="30.0" prefWidth="100.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="roundsWonPlayerTwo" layoutX="823.0" layoutY="134.0" prefHeight="30.0" prefWidth="100.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="757.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de manches gagnées" textAlignment="CENTER" wrappingWidth="132.7999877929687">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
