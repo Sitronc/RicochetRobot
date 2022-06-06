@@ -12,5 +12,5 @@ module isep.robotricochet {
 
     opens isep.robotricochet to javafx.fxml;
     exports isep.robotricochet;
-    exports isep.robotricochet.backend;
+    exports isep.robotricochet.generation;
 }
